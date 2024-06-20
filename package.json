@@ -1,0 +1,32 @@
+{
+  "name": "aws-s3-utils",
+  "version": "1.0.0",
+  "description": "AWS S3 Bucket Utilities",
+  "main": "./dist/index.js",
+  "type": "module",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "Prakhil Lohiya",
+  "license": "ISC",
+  "devDependencies": {
+    "@aws-sdk/types": "^3.428.0",
+    "@types/node": "^20.8.4",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.427.0",
+    "@aws-sdk/credential-providers": "^3.427.0",
+    "@aws-sdk/s3-request-presigner": "^3.427.0",
+    "@types/multer": "^1.4.8",
+    "multer": "^1.4.5-lts.1"
+  }
+}
